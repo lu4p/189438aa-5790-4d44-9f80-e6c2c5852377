@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { PlusIcon } from '@heroicons/react/20/solid'
 import { Event, EventDispatcher } from './event'
 import EventInfo from './event-info'
