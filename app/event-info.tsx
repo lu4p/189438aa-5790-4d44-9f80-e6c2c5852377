@@ -2,7 +2,7 @@ import { MapPinIcon } from "@heroicons/react/20/solid";
 import { Event } from "./event";
 import { formatDateTime } from "./util";
 
-export default function EventInfo(event: Event) {
+export default function EventInfo({ event }: { event: Event }) {
   return (
     <>
       <a href={event.venue.direction} className='flex font-semibold' >

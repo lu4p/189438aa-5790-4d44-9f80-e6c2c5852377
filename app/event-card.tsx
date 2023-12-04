@@ -1,8 +1,6 @@
 import { PlusIcon } from '@heroicons/react/20/solid'
 import { Event, EventDispatcher } from './event'
-import { Dispatch, SetStateAction } from 'react'
 import EventInfo from './event-info'
-
 
 export default function EventCard({
   event, events, filteredEvents, cart,
@@ -43,7 +41,7 @@ export default function EventCard({
       </div>
 
       <div className="px-4 pt-4 pb-10 text-sm">
-        {EventInfo(event)}
+        <EventInfo event={event} />
       </div>
 
       <div className='absolute bottom-0 right-0 mr-2 mb-2'>

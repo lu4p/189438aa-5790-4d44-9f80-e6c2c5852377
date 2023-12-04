@@ -7,7 +7,6 @@ import EventCard from "./event-card";
 import Cart from "./cart";
 import { formatDate, formatDateLocal } from "./util";
 
-
 export default function EventPage({ events: initEvents }: { events: Event[] }) {
   const [events, setEvents] = useState(initEvents);
   const [filteredEvents, setFilteredEvents] = useState(initEvents);
@@ -34,7 +33,7 @@ export default function EventPage({ events: initEvents }: { events: Event[] }) {
     <>
       <Navbar events={events} setFilteredEvents={setFilteredEvents} cart={cart} setCartOpen={setCartOpen} />
 
-      {Cart(cart, cartOpen, setCartOpen)}
+      <Cart cart={cart} open={cartOpen} setOpen={setCartOpen} />
 
       <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-4">
         <div className="flex gap-x-1.5">

@@ -1,5 +1,3 @@
-'use client';
-
 import { Event, EventDispatcher } from './event'
 
 import { Dispatch, SetStateAction, useState } from 'react'
@@ -7,7 +5,6 @@ import { MagnifyingGlassIcon } from '@heroicons/react/20/solid'
 import { ShoppingCartIcon } from '@heroicons/react/24/outline'
 
 export default function Navbar({ events, setFilteredEvents, cart, setCartOpen }: {
-
   events: Event[],
   setFilteredEvents: EventDispatcher,
   cart: Event[],
